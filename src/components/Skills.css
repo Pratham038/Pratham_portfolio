@@ -1,34 +1,140 @@
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
+.skill-flex {
+    margin: 3rem 0;
+}
+
+.skill-div {
+    display: flex;
+    justify-content: center;
+}
+
+.h-skill {
+
+    margin: 1rem 0rem;
+    text-align: center;
+    color: greenyellow;
+}
+
+.skills-flex {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin: 10px;
     padding: 10px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    background-color: #333;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+
+@media(max-width: 880px) {
+    .skill-item {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.skill-name {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+@media(max-width: 680px) {
+    .skill-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill-name {
+        color: whitesmoke;
+        font-size: 11px;
+    }
+
 }
 
 .skill-item:hover {
-    transform: scale(1.05);
+    background-color: lightyellow;
 }
 
 .skill-item img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-item:hover .skill-name {
+    color: black;
 }
 
 .skill-item p {
     margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    text-align: center;
+}
+
+
+.button1 {
+    text-align: center;
+    position: relative;
+    padding: 15px 30px;
+    font-family: inherit;
+    background-color: var(--color-primary);
+    border: 2px solid;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button1:hover span {
+    background: linear-gradient(135deg, #aefb2a 0%, #57ebde 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -110%;
+    top: -0%;
+    background: #aefb2a;
+    pointer-events: none;
+    margin: auto;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button1:hover {
+    letter-spacing: 2px;
+    border-image: linear-gradient(135deg, #aefb2a 0%, #57ebde 100%);
+    border-image-slice: 1;
+}
+
+.button1:hover::before {
+    left: 110%;
+}
+
+.button1:active {
+    scale: 0.95;
+}
+
+.repro {
+    color: aliceblue;
+    border: 3px solid green;
+
+}
+
+.project-cont-head {
+    color: whitesmoke;
 }

@@ -1,0 +1,39 @@
+.project {
+
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-name {
+    color: limegreen;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #1e90ff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .project {
+        padding: 15px;
+    }
+
+    .project-name {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+}
