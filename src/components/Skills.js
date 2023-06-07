@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 import fei from "../images/front-end.svg";
 import Project from "./Project";
-
+import "./Project.css";
 const Skills = () => {
   const skills = [
     { name: "Front-End Coding", image: fei },
@@ -58,8 +58,15 @@ const Skills = () => {
         </div>
       </div>
       {/* Projects div */}
-      <div classname="repro">
-        <h1 className="project-cont-head">Projects :</h1>
+      <div
+        classname="repro"
+        style={{
+          backgroundColor: "",
+          width: "100%",
+          padding: "1rem 3rem",
+        }}
+      >
+        <h1 className="project-cont-head">Projects </h1>
         {projects.map((project, index) => (
           <Project
             key={index}

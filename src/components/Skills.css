@@ -1,5 +1,5 @@
 .skill-flex {
-    margin: 3rem 0;
+    padding: 1rem 0;
 }
 
 .skill-div {
@@ -15,7 +15,7 @@
 }
 
 .skills-flex {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,6 +60,33 @@
 
 }
 
+@media(max-width: 480px) {
+    .skill-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-name {
+        color: whitesmoke;
+        font-size: 9px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .skill-item {
+
+        width: 70px;
+        height: 72px;
+    }
+
+    .skill-name {
+        color: whitesmoke;
+        font-size: 7.5px;
+    }
+
+}
+
 .skill-item:hover {
     background-color: lightyellow;
 }
@@ -82,11 +109,10 @@
 .button1 {
     text-align: center;
     position: relative;
-    padding: 15px 30px;
+    padding: 0.4rem 1rem;
     font-family: inherit;
     background-color: var(--color-primary);
-    border: 2px solid;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 600;
     color: white;
     cursor: pointer;
@@ -127,14 +153,4 @@
 
 .button1:active {
     scale: 0.95;
-}
-
-.repro {
-    color: aliceblue;
-    border: 3px solid green;
-
-}
-
-.project-cont-head {
-    color: whitesmoke;
 }
